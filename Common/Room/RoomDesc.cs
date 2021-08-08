@@ -18,8 +18,6 @@ namespace Common.Room
 
         //房间Id号
         public int ID;
-        //游戏类型
-        public GameType GameType;
 
         public RoomDesc(int ID)
         {

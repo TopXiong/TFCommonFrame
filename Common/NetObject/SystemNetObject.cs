@@ -6,8 +6,6 @@ using System.Collections.Generic;
 
 namespace Common.NetObject
 {
-
-
     [Serializable]
     public class Msg : SystemNetObject
     {

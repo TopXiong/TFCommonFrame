@@ -2,21 +2,34 @@
 
 namespace Common.NetObject
 {
-
+    /// <summary>
+    /// 基本消息类型
+    /// </summary>
     [Serializable]
-    public enum GameType
+    public enum BaseNetObjectType
     {
-        Sample,
-        DirtyPig,
-        HauntedHouse,
+        /// <summary>
+        /// 系统消息
+        /// </summary>
+        SystemNetObject,
+        /// <summary>
+        /// 游戏消息
+        /// </summary>
+        GameNetObject,
     }
+
     /// <summary>
     /// 通讯信息基类
     /// </summary>
     [Serializable]
     public abstract class BaseNetObject
     {
-        
+        public BaseNetObjectType BaseNetObjectType;
+
+        public BaseNetObject(BaseNetObjectType baseNetObjectType)
+        {
+            BaseNetObjectType = baseNetObjectType;
+        }
     }
     /// <summary>
     /// 系统消息基类
@@ -24,7 +37,7 @@ namespace Common.NetObject
     [Serializable]
     public abstract class SystemNetObject : BaseNetObject
     {
-
+        public SystemNetObject() : base(BaseNetObjectType.SystemNetObject) { }
     }
 
     /// <summary>
@@ -33,12 +46,7 @@ namespace Common.NetObject
     [Serializable]
     public abstract class GameNetObject : BaseNetObject
     {
-        /// <summary>
-        /// 游戏类型
-        /// </summary>
-        //public GameType gameType;
-
-        public GameNetObject()
+        public GameNetObject() : base(BaseNetObjectType.GameNetObject)
         {
 
         }
@@ -52,7 +60,7 @@ namespace Common.NetObject
     public abstract class ComponentSynNetObject : GameNetObject
     {
         /// <summary>
-        /// 游戏类型
+        /// 组件ID
         /// </summary>
         public Guid ComponentId;
 
