@@ -11,18 +11,13 @@ namespace Common.Room
     /// 表示房间的配置信息
     /// </summary>
     [Serializable]
-    public class RoomDesc
+    public abstract class BaseRoomDesc
     {
         //最大容纳人数
         public int MaxPlayerNum;
 
         //房间Id号
         public int ID;
-
-        public RoomDesc(int ID)
-        {
-            this.ID = ID;
-        }
 
         public override string ToString()
         {

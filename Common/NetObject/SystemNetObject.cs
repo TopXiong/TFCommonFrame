@@ -63,13 +63,13 @@ namespace Common.NetObject
     public class CreateRoomC2S : SystemNetObject
     {
 
-        public RoomDesc RoomDesc;
+        public BaseRoomDesc RoomDesc;
 
         public String Password;
 
         public CreateRoomC2S() { }
 
-        public CreateRoomC2S(RoomDesc room,string password)
+        public CreateRoomC2S(BaseRoomDesc room,string password)
         {
             this.RoomDesc = room;
             this.Password = password;

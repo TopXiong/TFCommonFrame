@@ -28,9 +28,9 @@ namespace Common.Room
         /// <summary>
         /// 房间的配置
         /// </summary>
-        public RoomDesc RoomDesc;
+        public BaseRoomDesc RoomDesc;
 
-        public RoomState(RoomDesc roomDesc)
+        public RoomState(BaseRoomDesc roomDesc)
         {
             RoomDesc = roomDesc;
             UserDatas = new UserData[roomDesc.MaxPlayerNum];

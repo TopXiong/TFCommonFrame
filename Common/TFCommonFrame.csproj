@@ -64,11 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NetObject\BaseNetObject.cs" />
-    <Compile Include="NetObject\TransfromChange.cs" />
     <Compile Include="Tools\NetBaseTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Room\RoomState.cs" />
-    <Compile Include="Room\RoomDesc.cs" />
+    <Compile Include="Room\BaseRoomDesc.cs" />
     <Compile Include="Tools\StringTools.cs" />
     <Compile Include="NetObject\SystemNetObject.cs" />
     <Compile Include="User\UserData.cs" />
