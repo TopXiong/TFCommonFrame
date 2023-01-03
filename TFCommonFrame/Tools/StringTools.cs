@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Common.Tools
+namespace TFCommonFrame.Tools
 {
     public static class StringTools
     {

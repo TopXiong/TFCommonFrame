@@ -1,11 +1,11 @@
-﻿using Common.NetObject;
+﻿using TFCommonFrame.NetObject;
 using System;
 using System.IO;
 using System.Net.Sockets;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace Common.Tools
+namespace TFCommonFrame.Tools
 {
     public static class NetBaseTool
     {

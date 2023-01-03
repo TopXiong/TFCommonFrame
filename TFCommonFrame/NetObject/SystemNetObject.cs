@@ -1,10 +1,10 @@
-﻿using Common.Room;
-using Common.User;
+﻿using TFCommonFrame.Room;
+using TFCommonFrame.User;
 using System;
 using System.Collections.Generic;
 
 
-namespace Common.NetObject
+namespace TFCommonFrame.NetObject
 {
     [Serializable]
     public class Msg : SystemNetObject

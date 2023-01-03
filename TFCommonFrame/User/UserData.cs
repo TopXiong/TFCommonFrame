@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.User
+namespace TFCommonFrame.User
 {
     [Serializable]
     public class UserData

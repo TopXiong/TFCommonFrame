@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Common.NetObject
+namespace TFCommonFrame.NetObject
 {
     /// <summary>
     /// 基本消息类型
