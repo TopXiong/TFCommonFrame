@@ -13,6 +13,10 @@ namespace TFCommonFrame.NetObject
         /// </summary>
         SystemNetObject,
         /// <summary>
+        /// 房间内消息
+        /// </summary>
+        RoomNetObject,
+        /// <summary>
         /// 游戏消息
         /// </summary>
         GameNetObject,
@@ -44,11 +48,23 @@ namespace TFCommonFrame.NetObject
     /// 游戏消息
     /// </summary>
     [Serializable]
-    public abstract class GameNetObject : BaseNetObject
+    public abstract class RoomNetObject : BaseNetObject
     {
-        public GameNetObject() : base(BaseNetObjectType.GameNetObject)
+        public RoomNetObject() : base(BaseNetObjectType.GameNetObject)
         {
 
+        }
+    }
+
+    /// <summary>
+    /// 游戏消息
+    /// </summary>
+    [Serializable]
+    public abstract class GameNetObject : RoomNetObject
+    {
+        public GameNetObject()
+        {
+            BaseNetObjectType = BaseNetObjectType.GameNetObject;
         }
     }
 

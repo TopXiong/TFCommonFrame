@@ -54,7 +54,7 @@ namespace TFCommonFrame.NetObject
     }
 
     [Serializable]
-    public class GameStart : SystemNetObject
+    public class GameStart : RoomNetObject
     {
 
     }
